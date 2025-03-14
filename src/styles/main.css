@@ -90,6 +90,7 @@ nav {
     }
 }
 
+
 .banner {
     position: relative;
     background-size: cover;
@@ -149,9 +150,11 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* Garante que a imagem cubra toda a área do banner */
+    object-fit: cover;  
     z-index: 1;
+    filter: opacity(0.4); /* Deixa a imagem mais fosca, ajustando a opacidade */
 }
+
 
 
 .section {
