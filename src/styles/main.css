@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #444;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+header {
+    background: linear-gradient(135deg, #1E2A47, #3B4C77);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-bottom: 10px solid #F1C40F;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+nav {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #F1C40F;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #1E2A47;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+        border: 2px solid #F1C40F;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.show {
+        display: block;
+    }
+}
+
+.banner {
+    position: relative;
+    background-image: url(/public/assets/images/foto1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-bottom: 5px solid #F1C40F;
+    border-radius: 10px;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.banner .btn {
+    background-color: #3B4C77;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.banner .btn:hover {
+    background-color: #2C3E50;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #F1C40F;
+    padding-bottom: 10px;
+    color: #1E2A47;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+.section p {
+    margin-bottom: 20px;
+}
+
+.section a {
+    color: #3B4C77;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.section a:hover {
+    color: #F1C40F;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 2px solid #F1C40F;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 50px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1E2A47;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.pix-info {
+    text-align: center;
+}
+
+.pix-info img {
+    width: 150px;
+    margin-bottom: 20px;
+    border: 5px solid #F1C40F;
+}
+
+.copy-btn {
+    background-color: #3B4C77;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #2C3E50;
+}
+
+.whatsapp-container {
+    margin-top: 30px;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+}
+
+footer {
+    background-color: #1E2A47;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid #F1C40F;
+}
+
+footer p, footer h2, footer h3, footer a {
+    color: white;
+}
+
+.banner p {
+    color: white;
+}
+
+h2, h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+a {
+    font-weight: 500;
+    color: #3B4C77;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #F1C40F;
+}

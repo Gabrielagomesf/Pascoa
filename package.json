@@ -1,0 +1,21 @@
+{
+  "name": "doacao",
+  "version": "1.0.0",
+  "main": "index.html",
+  "description": "Campanha de Doação de Páscoa para arrecadar fundos e ajudar crianças carentes",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "campanha",
+    "doação",
+    "páscoa",
+    "pix"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
