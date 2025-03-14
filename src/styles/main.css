@@ -92,7 +92,7 @@ nav {
 
 .banner {
     position: relative;
-    background-image: url(./public/assets/images/foto1.jpg);  /* Ajustado aqui */
+    background-image: url(public/assets/images/foto1.jpg);  /* Ajustado aqui */
     background-size: cover;
     background-position: center;
     height: 400px;
